@@ -4,13 +4,13 @@ import { useState } from "react";
 import NavToggle from "./NavToggle";
 import { motion } from "framer-motion";
 import NavContainer from "./Container";
+import NavList from "./NavList";
 
 function Nav({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const onToggle = () => {
     setIsOpen(!isOpen);
-    console.log("clicked");
   };
 
   return (
@@ -40,7 +40,7 @@ function Nav({ children }: { children: React.ReactNode }) {
           },
         }}
       >
-        asd
+        <NavList />
       </motion.div>
       <NavContainer>{children}</NavContainer>
     </motion.div>
