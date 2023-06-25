@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link } from "react-router-dom";
 import styles from "./navlist.module.css";
 import NavListItem from "./NavListItem";
 
@@ -14,13 +15,13 @@ function NavList() {
       }}
     >
       <NavListItem>
-        <Link href="/">Home</Link>
+        <Link to="/">Home</Link>
       </NavListItem>
       <NavListItem>
-        <Link href="/works">Works</Link>
+        <Link to="/works">Works</Link>
       </NavListItem>
       <NavListItem>
-        <Link href="/contact-us">Contact Us</Link>
+        <Link to="/contact-us">Contact Us</Link>
       </NavListItem>
     </motion.ul>
   );

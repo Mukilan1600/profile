@@ -25,4 +25,5 @@
   padding: 10px 15px;
   display: flex;
   align-items: center;
+  transform: translateX(100vw);
 }
