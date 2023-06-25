@@ -17,7 +17,18 @@ type Props = {
 
 function NavToggle({ toggle }: Props) {
   return (
-    <button onClick={toggle} className={styles.button}>
+    <motion.button
+      onClick={toggle}
+      className={styles.button}
+      variants={{
+        closed: {
+          left: "10px",
+        },
+        open: {
+          left: "310px",
+        },
+      }}
+    >
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
           variants={{
@@ -40,7 +51,7 @@ function NavToggle({ toggle }: Props) {
           }}
         />
       </svg>
-    </button>
+    </motion.button>
   );
 }
 

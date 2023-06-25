@@ -9,10 +9,12 @@ function Home() {
       <p className={style.scroll_text_container}>
         <span className={style.scroll_text}>
           “Amazing problem solver” - “Very quick learner” - “Saved my dog from a
+          fire” - “Amazing problem solver” - “Very quick learner” - “Saved my dog from a
           fire” -&nbsp;
         </span>
         <span className={`${style.scroll_text} ${style.scroll_text2}`}>
-          “Amazing problem solver” - “Very quick learner” - “Saved my dog from a
+        “Amazing problem solver” - “Very quick learner” - “Saved my dog from a
+          fire” - “Amazing problem solver” - “Very quick learner” - “Saved my dog from a
           fire” -&nbsp;
         </span>
       </p>

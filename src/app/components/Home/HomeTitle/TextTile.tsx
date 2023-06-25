@@ -13,7 +13,7 @@ function TextTile({
   return (
     <motion.div
       whileHover="hover"
-      style={{ width: "100%", position: "relative", height: "70px" }}
+      style={{ width: "100%", position: "relative", height: "3.5rem" }}
     >
       <motion.div
         variants={{
@@ -26,11 +26,11 @@ function TextTile({
       <motion.div
         className={styles.hidden_tile}
         initial={{
-          x: "100%",
+          x: "100vw",
         }}
         variants={{
           hover: {
-            x: "-15%",
+            x: "-17%",
           },
         }}
         transition={{
