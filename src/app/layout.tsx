@@ -1,4 +1,4 @@
-
+import PageTransition from "./components/Home/PageTransition";
 import Nav from "./components/Nav";
 import "./globals.css";
 import { Quicksand } from "next/font/google";
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={quicksand.className}>
         <Nav>
-            {children}
+          <PageTransition>{children}</PageTransition>
         </Nav>
       </body>
     </html>

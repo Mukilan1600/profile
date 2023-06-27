@@ -23,7 +23,7 @@ function NavContainer({ children }: { children: React.ReactNode }) {
         },
       }}
     >
-      {children}
+      <div>{children}</div>
     </motion.div>
   );
 }
