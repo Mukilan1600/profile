@@ -1,12 +1,14 @@
+"use client";
 import style from "./home.module.css";
 import { motion, useIsPresent } from "framer-motion";
 import HomeTitle from "./HomeTitle";
+import React from "react";
 
 function Home() {
   const isPresent = useIsPresent();
 
   return (
-    <>
+    <React.Fragment>
       <div className={style.home_container}>
         <div>socials</div>
         <HomeTitle />
@@ -30,7 +32,7 @@ function Home() {
         style={{ originX: isPresent ? 0 : 1 }}
         className="privacy_screen"
       />
-    </>
+    </React.Fragment>
   );
 }
 

@@ -21,7 +21,6 @@ export default function App() {
   const location = useLocation();
 
   if (!routeElements) return null;
-
   return (
     <AnimatePresence mode="wait" initial={false}>
       {React.cloneElement(routeElements, { key: location.pathname })}

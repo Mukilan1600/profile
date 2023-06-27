@@ -1,9 +1,10 @@
+"use client";
+import { AnimatePresence } from "framer-motion";
 import Nav from "./components/Nav";
 import "./globals.css";
 import { Quicksand } from "next/font/google";
-import ClientBrowserRouter from "./components/ClientBrowserRouter";
-import Router from "./Router";
-import React from "react";
+import React, { ReactElement } from "react";
+import { usePathname } from "next/navigation";
 
 const quicksand = Quicksand({ subsets: ["latin"] });
 
@@ -20,11 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={quicksand.className}>
-        <ClientBrowserRouter>
-          <Nav>
-            <Router />
-          </Nav>
-        </ClientBrowserRouter>
+        <Nav>
+          <AnimatePresence mode="wait">
+            {children}
+          </AnimatePresence>
+        </Nav>
       </body>
     </html>
   );
