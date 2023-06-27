@@ -14,8 +14,8 @@ export default function PageTransition({
 
   return (
     <AnimatePresence mode="wait" initial={false}>
+      {children}
       <React.Fragment key={path}>
-        {children}
         <AnimateScreen />
       </React.Fragment>
     </AnimatePresence>
