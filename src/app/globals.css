@@ -71,6 +71,14 @@ body {
 }
 
 .privacy_screen {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.privacy_screen > .privacy_div {
   position: absolute;
   top: 0;
   left: 0;

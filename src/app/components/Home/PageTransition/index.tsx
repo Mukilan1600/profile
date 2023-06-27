@@ -13,11 +13,13 @@ export default function PageTransition({
   const path = usePathname();
 
   return (
-    <AnimatePresence mode="wait" initial={false}>
-      {children}
-      <React.Fragment key={path}>
-        <AnimateScreen />
-      </React.Fragment>
-    </AnimatePresence>
+    <div className="privacy_screen">
+      <AnimatePresence mode="wait" initial={false}>
+        {children}
+        <React.Fragment key={path}>
+          <AnimateScreen />
+        </React.Fragment>
+      </AnimatePresence>
+    </div>
   );
 }
