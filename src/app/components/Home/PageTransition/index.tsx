@@ -15,7 +15,7 @@ export default function PageTransition({
   return (
     <div className="privacy_screen">
       <AnimatePresence mode="wait" initial={false}>
-        {children}
+        <React.Fragment>{children}</React.Fragment>
         <React.Fragment key={path}>
           <AnimateScreen />
         </React.Fragment>
