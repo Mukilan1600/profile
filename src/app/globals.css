@@ -78,7 +78,7 @@ body {
   overflow: hidden;
 }
 
-.privacy_screen > .privacy_div {
+.privacy_div {
   position: absolute;
   top: 0;
   left: 0;
